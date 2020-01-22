@@ -18,6 +18,13 @@ scoreboard players set #static_10000 numeric 10000
 scoreboard players set #calculation_temp1 numeric 0
 scoreboard players set #calculation_temp2 numeric 0
 scoreboard players set #calculation_temp3 numeric 0
+scoreboard players set #calculation_temp4 numeric 0
+scoreboard players set #calculation_temp5 numeric 0
+scoreboard players set #calculation_temp6 numeric 0
+scoreboard players set #calculation_temp7 numeric 0
+scoreboard players set #calculation_temp8 numeric 0
+scoreboard players set #calculation_temp9 numeric 0
+scoreboard players set #calculation_temp10 numeric 0
 
 scoreboard objectives add random dummy
 scoreboard players set #random_max random 0

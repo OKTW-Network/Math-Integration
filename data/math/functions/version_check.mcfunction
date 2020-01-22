@@ -1,4 +1,4 @@
-scoreboard players set #math_version Meta 100
+scoreboard players set #math_version Meta 1000
 
 execute unless score #math_version Meta = #math_currently_version Meta if score #math_version Meta > #math_currently_version Meta if score #math_print_version Config matches 1..2 run tellraw @a ["",{"text":"[Math]: ","color":"yellow","bold":true},{"text":"Version: "},{"score":{"name":"#math_currently_version","objective":"Meta"}},{"text":" -> ","color":"green"},{"score":{"name":"#math_version","objective":"Meta"}}]
 execute unless score #math_version Meta = #math_currently_version Meta if score #math_version Meta < #math_currently_version Meta if score #math_print_version Config matches 1..2 run tellraw @a ["",{"text":"[Math]: ","color":"yellow","bold":true},{"text":"Version: "},{"score":{"name":"#math_currently_version","objective":"Meta"}},{"text":" -> ","color":"red"},{"score":{"name":"#math_version","objective":"Meta"}}]
