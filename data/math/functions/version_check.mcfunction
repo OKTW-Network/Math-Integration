@@ -1,11 +1,35 @@
-scoreboard players set #math_version Meta 1000
+scoreboard players set #math_version_x.*.*-* Meta 1
+scoreboard players set #math_version_*.x.*-* Meta 0
+scoreboard players set #math_version_*.*.x-* Meta 0
+scoreboard players set #math_version_*.*.*-x Meta 0
 
-execute unless score #math_version Meta = #math_currently_version Meta if score #math_version Meta > #math_currently_version Meta if score #math_print_version Config matches 1..2 run tellraw @a ["",{"text":"[Math]: ","color":"yellow","bold":true},{"text":"Version: "},{"score":{"name":"#math_currently_version","objective":"Meta"}},{"text":" -> ","color":"green"},{"score":{"name":"#math_version","objective":"Meta"}}]
-execute unless score #math_version Meta = #math_currently_version Meta if score #math_version Meta < #math_currently_version Meta if score #math_print_version Config matches 1..2 run tellraw @a ["",{"text":"[Math]: ","color":"yellow","bold":true},{"text":"Version: "},{"score":{"name":"#math_currently_version","objective":"Meta"}},{"text":" -> ","color":"red"},{"score":{"name":"#math_version","objective":"Meta"}}]
-execute if score #math_version Meta = #math_currently_version Meta if score #math_print_version Config matches 2 run tellraw @a ["",{"text":"[Math]: ","color":"yellow","bold":true},{"text":"Version: "},{"score":{"name":"#math_version","objective":"Meta"}}]
 
-scoreboard players operation #math_currently_version Meta = #math_version Meta
+scoreboard players operation #new_x.*.*-* Version = #math_version_x.*.*-* Meta
+scoreboard players operation #new_*.x.*-* Version = #math_version_*.x.*-* Meta
+scoreboard players operation #new_*.*.x-* Version = #math_version_*.*.x-* Meta
+scoreboard players operation #new_*.*.*-x Version = #math_version_*.*.*-x Meta
+scoreboard players operation #currently_x.*.*-* Version = #math_currently_version_x.*.*-* Meta
+scoreboard players operation #currently_*.x.*-* Version = #math_currently_version_*.x.*-* Meta
+scoreboard players operation #currently_*.*.x-* Version = #math_currently_version_*.*.x-* Meta
+scoreboard players operation #currently_*.*.*-x Version = #math_currently_version_*.*.*-x Meta
+function cu:version/check
+
+function cu:version/build-new
+function cu:version/build-currently
+
+execute if score #none Version matches 1 if score #math_print_version Config matches 1..2 run tellraw @a ["",{"text":"[Math Integration]: ","color":"yellow","bold":true},{"text":"Version: "},{"nbt":"version.new","storage":"cu:resources","interpret":true}]
+execute if score #change Version matches 1 if score #higher Version matches 1 if score #math_print_version Config matches 1..2 run tellraw @a ["",{"text":"[Math Integration]: ","color":"yellow","bold":true},{"text":"Version: "},{"nbt":"version.currently","storage":"cu:resources","interpret":true},{"text":" -> ","color":"green"},{"nbt":"version.new","storage":"cu:resources","interpret":true}]
+execute if score #change Version matches 1 if score #lower Version matches 1 if score #math_print_version Config matches 1..2 run tellraw @a ["",{"text":"[Math Integration]: ","color":"yellow","bold":true},{"text":"Version: "},{"nbt":"version.currently","storage":"cu:resources","interpret":true},{"text":" -> ","color":"red"},{"nbt":"version.new","storage":"cu:resources","interpret":true}]
+execute if score #change Version matches 0 if score #none Version matches 0 if score #math_print_version Config matches 2 run tellraw @a ["",{"text":"[Math Integration]: ","color":"yellow","bold":true},{"text":"Version: "},{"nbt":"version.new","storage":"cu:resources","interpret":true}]
+
+# execute if score #change Version matches 1 run function math:debug/clean_up-scoreboard
+
+scoreboard players operation #math_currently_version_x.*.*-* Meta = #math_version_x.*.*-* Meta
+scoreboard players operation #math_currently_version_*.x.*-* Meta = #math_version_*.x.*-* Meta
+scoreboard players operation #math_currently_version_*.*.x-* Meta = #math_version_*.*.x-* Meta
+scoreboard players operation #math_currently_version_*.*.*-x Meta = #math_version_*.*.*-x Meta
 
 scoreboard players remove @s versionMath 0
+# execute as @a unless score @s versionMath = #math_currently_version Meta run function math:debug/clean_up-tag
 # execute as @a unless score @s versionMath = #math_currently_version Meta run function math:debug/remove_init_tag
 execute as @a unless score @s versionMath = #math_currently_version Meta run scoreboard players operation @s versionMath = #math_currently_version Meta

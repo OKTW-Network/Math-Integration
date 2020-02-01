@@ -7,7 +7,7 @@
 # integer, default: 2
 scoreboard players set #math_print_version Config 2
 
-# Allow module init prompt print out
+# Allow initial prompt print out
 # boolean, default: 0
 scoreboard players set #math_print_init Config 0
 
@@ -19,4 +19,4 @@ scoreboard players set #math_print_config Config 0
 
 ############# DO NOT MODIFY #############
 
-execute if score #math_print_config Config matches 1 run tellraw @a ["",{"text":"[Math]: ","color":"yellow","bold":true},{"text":"Config: "},{"text":"Settings loaded!"}]
+execute if score #math_print_config Config matches 1 run tellraw @a ["",{"text":"[Math Integration]: ","color":"yellow","bold":true},{"text":"Config: "},{"text":"Settings loaded!"}]
