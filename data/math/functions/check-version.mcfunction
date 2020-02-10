@@ -1,8 +1,4 @@
-scoreboard players set #math_version_x.*.*-* Meta 1
-scoreboard players set #math_version_*.x.*-* Meta 0
-scoreboard players set #math_version_*.*.x-* Meta 0
-scoreboard players set #math_version_*.*.*-x Meta 0
-
+function math:version
 
 scoreboard players operation #new_x.*.*-* Version = #math_version_x.*.*-* Meta
 scoreboard players operation #new_*.x.*-* Version = #math_version_*.x.*-* Meta

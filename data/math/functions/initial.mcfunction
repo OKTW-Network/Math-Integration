@@ -1,6 +1,6 @@
 function math:meta/scoreboard/register
 function math:config
-function math:version_check
+function math:check-version
 
 # execute as @a[tag=!InitializedMathScore] run function math:meta/scoreboard/set_player_score
 
