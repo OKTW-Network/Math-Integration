@@ -1,0 +1,10 @@
+scoreboard players operation #calculation_temp1 numeric = #calculation_temp1-1 numeric
+scoreboard players operation #calculation_temp2 numeric = #calculation_temp2-1 numeric
+scoreboard players operation #calculation_temp3 numeric = #calculation_temp3-1 numeric
+scoreboard players operation #calculation_temp4 numeric = #calculation_temp4-1 numeric
+scoreboard players operation #calculation_temp5 numeric = #calculation_temp5-1 numeric
+scoreboard players operation #calculation_temp6 numeric = #calculation_temp6-1 numeric
+scoreboard players operation #calculation_temp7 numeric = #calculation_temp7-1 numeric
+scoreboard players operation #calculation_temp8 numeric = #calculation_temp8-1 numeric
+scoreboard players operation #calculation_temp9 numeric = #calculation_temp9-1 numeric
+scoreboard players operation #calculation_temp10 numeric = #calculation_temp10-1 numeric
