@@ -1,6 +1,11 @@
 scoreboard objectives add Meta dummy
 scoreboard objectives add Config dummy
 
+scoreboard objectives add VersionMathX dummy
+scoreboard objectives add VersionMathY dummy
+scoreboard objectives add VersionMathZ dummy
+scoreboard objectives add VersionMathA dummy
+
 scoreboard objectives add numeric dummy
 scoreboard players set #static_-1 numeric -1
 scoreboard players set #static_1 numeric 1
