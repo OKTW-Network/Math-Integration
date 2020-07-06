@@ -69,3 +69,7 @@ scoreboard players set #calculation_temp10-3 numeric 0
 scoreboard objectives add random dummy
 scoreboard players set #random_max random 0
 scoreboard players set #random_result random 0
+
+scoreboard objectives add percent dummy
+scoreboard players set #percent_base percent 0
+scoreboard players set #percent_modifier percent 0
