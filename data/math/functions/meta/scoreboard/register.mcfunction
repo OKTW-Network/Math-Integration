@@ -18,9 +18,20 @@ scoreboard players set #static_7 numeric 7
 scoreboard players set #static_8 numeric 8
 scoreboard players set #static_9 numeric 9
 scoreboard players set #static_10 numeric 10
+scoreboard players set #static_25 numeric 25
+scoreboard players set #static_50 numeric 50
+scoreboard players set #static_75 numeric 75
 scoreboard players set #static_100 numeric 100
 scoreboard players set #static_1000 numeric 1000
 scoreboard players set #static_10000 numeric 10000
+scoreboard players set #static_15 numeric 15
+scoreboard players set #static_30 numeric 30
+scoreboard players set #static_45 numeric 45
+scoreboard players set #static_60 numeric 60
+scoreboard players set #static_90 numeric 90
+scoreboard players set #static_180 numeric 180
+scoreboard players set #static_270 numeric 270
+scoreboard players set #static_360 numeric 360
 
 scoreboard players set #calculation_temp1 numeric 0
 scoreboard players set #calculation_temp2 numeric 0
@@ -65,6 +76,39 @@ scoreboard players set #calculation_temp7-3 numeric 0
 scoreboard players set #calculation_temp8-3 numeric 0
 scoreboard players set #calculation_temp9-3 numeric 0
 scoreboard players set #calculation_temp10-3 numeric 0
+
+scoreboard objectives add calcu_temp1 dummy
+scoreboard players set #1 calcu_temp1 0
+scoreboard players set #2 calcu_temp1 0
+scoreboard players set #3 calcu_temp1 0
+scoreboard players set #4 calcu_temp1 0
+scoreboard players set #5 calcu_temp1 0
+scoreboard players set #6 calcu_temp1 0
+scoreboard players set #7 calcu_temp1 0
+scoreboard players set #8 calcu_temp1 0
+scoreboard players set #9 calcu_temp1 0
+
+scoreboard objectives add calcu_temp2 dummy
+scoreboard players set #1 calcu_temp2 0
+scoreboard players set #2 calcu_temp2 0
+scoreboard players set #3 calcu_temp2 0
+scoreboard players set #4 calcu_temp2 0
+scoreboard players set #5 calcu_temp2 0
+scoreboard players set #6 calcu_temp2 0
+scoreboard players set #7 calcu_temp2 0
+scoreboard players set #8 calcu_temp2 0
+scoreboard players set #9 calcu_temp2 0
+
+scoreboard objectives add calcu_temp3 dummy
+scoreboard players set #1 calcu_temp3 0
+scoreboard players set #2 calcu_temp3 0
+scoreboard players set #3 calcu_temp3 0
+scoreboard players set #4 calcu_temp3 0
+scoreboard players set #5 calcu_temp3 0
+scoreboard players set #6 calcu_temp3 0
+scoreboard players set #7 calcu_temp3 0
+scoreboard players set #8 calcu_temp3 0
+scoreboard players set #9 calcu_temp3 0
 
 scoreboard objectives add random dummy
 scoreboard players set #random_max random 0
