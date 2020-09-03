@@ -1,0 +1,10 @@
+scoreboard players operation #1 calcu_temp1 = #1 calcu_temp
+scoreboard players operation #2 calcu_temp1 = #2 calcu_temp
+scoreboard players operation #3 calcu_temp1 = #3 calcu_temp
+scoreboard players operation #4 calcu_temp1 = #4 calcu_temp
+scoreboard players operation #5 calcu_temp1 = #5 calcu_temp
+scoreboard players operation #6 calcu_temp1 = #6 calcu_temp
+scoreboard players operation #7 calcu_temp1 = #7 calcu_temp
+scoreboard players operation #8 calcu_temp1 = #8 calcu_temp
+scoreboard players operation #9 calcu_temp1 = #9 calcu_temp
+scoreboard players operation #10 calcu_temp1 = #10 calcu_temp

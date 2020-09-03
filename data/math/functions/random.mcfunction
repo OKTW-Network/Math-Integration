@@ -1,5 +1,5 @@
 function cu:uuid/generate
-execute store result score #random_result random run data get storage cu:resources UUID[0]
-execute if score #random_result random matches ..-1 run scoreboard players operation #random_result random *= #static_-1 numeric
-scoreboard players operation #random_result random %= #random_max random
-execute store result storage math:resources random.result int 1 run scoreboard players get #random_result random
+execute store result score #result random run data get storage cu:resources UUID[0]
+execute if score #result random matches ..-1 run scoreboard players operation #result random *= #-1 num
+scoreboard players operation #result random %= #max random
+execute store result storage math:resources random.result int 1 run scoreboard players get #result random
