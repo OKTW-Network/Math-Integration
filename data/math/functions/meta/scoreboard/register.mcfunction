@@ -29,6 +29,7 @@ scoreboard players set #50 num 50
 scoreboard players set #60 num 60
 scoreboard players set #75 num 75
 scoreboard players set #90 num 90
+scoreboard players set #99 num 99
 scoreboard players set #100 num 100
 scoreboard players set #180 num 180
 scoreboard players set #270 num 270
