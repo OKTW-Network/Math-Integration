@@ -1,6 +1,7 @@
 function math:check-dependency_optional
 
 function #math:scoreboard-register
+function #math:storage-register
 
 function #math:config
 

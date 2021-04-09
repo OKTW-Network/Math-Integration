@@ -1,5 +1,7 @@
 {
   "values": [
-    "math:meta/scoreboard/register"
+    "math:meta/scoreboard/register",
+    "math:pow/meta/scoreboard/register",
+    "math:random/meta/scoreboard/register"
   ]
 }

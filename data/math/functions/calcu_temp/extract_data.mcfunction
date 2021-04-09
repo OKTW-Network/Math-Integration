@@ -1,0 +1,10 @@
+execute store result score #1 calcu_temp run data get storage math:calcu_temp input[{id:1}].value
+execute store result score #2 calcu_temp run data get storage math:calcu_temp input[{id:2}].value
+execute store result score #3 calcu_temp run data get storage math:calcu_temp input[{id:3}].value
+execute store result score #4 calcu_temp run data get storage math:calcu_temp input[{id:4}].value
+execute store result score #5 calcu_temp run data get storage math:calcu_temp input[{id:5}].value
+execute store result score #6 calcu_temp run data get storage math:calcu_temp input[{id:6}].value
+execute store result score #7 calcu_temp run data get storage math:calcu_temp input[{id:7}].value
+execute store result score #8 calcu_temp run data get storage math:calcu_temp input[{id:8}].value
+execute store result score #9 calcu_temp run data get storage math:calcu_temp input[{id:9}].value
+execute store result score #10 calcu_temp run data get storage math:calcu_temp input[{id:10}].value
