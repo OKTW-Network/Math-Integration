@@ -1,0 +1,3 @@
+scoreboard objectives add percent dummy
+execute unless score #base percent matches -2147483648..2147483647 run scoreboard players set #base percent 0
+execute unless score #modifier percent matches -2147483648..2147483647 run scoreboard players set #modifier percent 0

@@ -54,7 +54,3 @@ scoreboard players set #7 calcu_temp 0
 scoreboard players set #8 calcu_temp 0
 scoreboard players set #9 calcu_temp 0
 scoreboard players set #10 calcu_temp 0
-
-scoreboard objectives add percent dummy
-scoreboard players set #base percent 0
-scoreboard players set #modifier percent 0
