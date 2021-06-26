@@ -1,4 +1,4 @@
-summon area_effect_cloud ~ ~ ~ {Tags:["math.UUIDGenerate"],Particle:"block air",Radius:0.125f,WaitTime:2147483647}
+summon minecraft:marker ~ ~ ~ {Tags:["math.UUIDGenerate"]}
 execute store result score #result random run data get entity @e[tag=math.UUIDGenerate,limit=1] UUID[0]
 kill @e[tag=math.UUIDGenerate]
 
