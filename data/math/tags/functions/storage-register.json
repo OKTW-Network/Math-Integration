@@ -1,6 +1,0 @@
-{
-    "values": [
-      "math:pow/meta/storage/register",
-      "math:random/meta/storage/register"
-    ]
-}

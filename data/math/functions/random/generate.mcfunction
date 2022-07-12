@@ -11,4 +11,3 @@ kill @e[tag=math.dummy.UUIDGenerator]
 execute if score #random.result math matches ..-1 run scoreboard players set #random.isNegative math 1
 scoreboard players operation #random.result math %= #random.precision math
 execute if score #random.allowNegative math matches 1 if score #random.isNegative math matches 1 run scoreboard players operation #random.result math *= #-1 num
-execute store result storage math:random result int 1 run scoreboard players get #random.result math
