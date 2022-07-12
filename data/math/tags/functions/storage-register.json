@@ -1,6 +1,5 @@
 {
     "values": [
-      "math:calcu_temp/meta/storage/register",
       "math:pow/meta/storage/register",
       "math:random/meta/storage/register"
     ]
