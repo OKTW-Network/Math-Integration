@@ -1,3 +1,3 @@
-scoreboard players set #base percent 0
-scoreboard players set #modifier percent 0
-scoreboard players set #result percent 0
+scoreboard players set #percent.base math 0
+scoreboard players set #percent.modifier math 0
+scoreboard players set #percent.result math 0

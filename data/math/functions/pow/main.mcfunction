@@ -1,11 +1,8 @@
-scoreboard players operation #result pow = #base pow
+scoreboard players operation #pow.result math = #pow.base math
 
-execute if score #base pow matches -2147483648..2147483647 unless score #base pow matches 0 if score #exponent pow matches 0 run scoreboard players set #result pow 1
-execute if score #exponent pow matches ..-1 run scoreboard players set #result pow 0
+execute if score #pow.base math matches -2147483648..2147483647 unless score #pow.base math matches 0 if score #pow.exponent math matches 0 run scoreboard players set #pow.result math 1
+execute if score #pow.exponent math matches ..-1 run scoreboard players set #pow.result math 0
 
-execute if score #exponent pow matches 2.. run function math:pow/loop
+execute if score #pow.exponent math matches 2.. run function math:pow/_recursive
 
-execute store result storage math:pow result int 1 run scoreboard players get #result pow
-
-scoreboard players set #base pow 1
-scoreboard players set #exponent pow 1
+execute store result storage math:pow result int 1 run scoreboard players get #pow.result math

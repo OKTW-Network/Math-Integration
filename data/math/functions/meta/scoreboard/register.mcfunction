@@ -3,6 +3,8 @@ scoreboard objectives add VersionMathY dummy
 scoreboard objectives add VersionMathZ dummy
 scoreboard objectives add VersionMathA dummy
 
+scoreboard objectives add math dummy "@math"
+
 scoreboard objectives add num dummy
 scoreboard players set #-1 num -1
 scoreboard players set #1 num 1
