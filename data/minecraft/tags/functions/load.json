@@ -1,6 +1,5 @@
 {
     "values":[
-        "math:check_and_run-initial",
         "math:check_and_run-setup"
     ]
 }
