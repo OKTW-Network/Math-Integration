@@ -1,5 +1,5 @@
 data modify storage cu:version broadcast_relation.input.datapack_name set value '{"text":"Math"}'
-scoreboard players operation #version.broadcast_relation.input.method cu = #math$print_version Config
+scoreboard players operation #version.broadcast_relation.input.method cu = #math$general.print_version Config
 function math:version
 scoreboard players operation #version.broadcast_relation.input_1.x cu = #math$version.x Meta
 scoreboard players operation #version.broadcast_relation.input_1.y cu = #math$version.y Meta

@@ -1,4 +1,4 @@
-execute if score #math$print_version Config matches 1..2 run function math:broadcast_version
+execute if score #math$general.print_version Config matches 1..2 run function math:broadcast_version
 
 scoreboard players operation #math$previous_version.x Meta = #math$current_version.x Meta
 scoreboard players operation #math$previous_version.y Meta = #math$current_version.y Meta
