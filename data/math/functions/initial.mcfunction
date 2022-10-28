@@ -1,6 +1,6 @@
-function #math:scoreboard-register
-
 function #math:config
+
+function #math:scoreboard-register
 
 execute if score #math$dependency-cu Meta matches 1 run function math:check-version
 

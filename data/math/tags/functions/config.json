@@ -1,6 +1,7 @@
 {
   "values": [
+    "math:meta/scoreboard/config/register",
     "math:config",
-    "math:meta/broadcast/config"
+    "math:meta/scoreboard/config/limit"
   ]
 }
