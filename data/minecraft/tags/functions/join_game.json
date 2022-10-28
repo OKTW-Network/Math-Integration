@@ -1,5 +1,5 @@
 {
   "values":[
-    "math:check-version_player"
+    "math:check_and_run-check_player_version"
   ]
 }

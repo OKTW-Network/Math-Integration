@@ -1,7 +1,6 @@
-scoreboard objectives add VersionMathX dummy
-scoreboard objectives add VersionMathY dummy
-scoreboard objectives add VersionMathZ dummy
-scoreboard objectives add VersionMathA dummy
+scoreboard objectives add math.meta.version.x dummy
+scoreboard objectives add math.meta.version.y dummy
+scoreboard objectives add math.meta.version.z dummy
 
 scoreboard objectives add math dummy "@math"
 
