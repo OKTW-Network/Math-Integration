@@ -44,15 +44,3 @@ scoreboard players set #1200 num 1200
 scoreboard players set #3600 num 3600
 scoreboard players set #10000 num 10000
 scoreboard players set #86400 num 86400
-
-scoreboard objectives add calcu_temp dummy
-scoreboard players set #1 calcu_temp 0
-scoreboard players set #2 calcu_temp 0
-scoreboard players set #3 calcu_temp 0
-scoreboard players set #4 calcu_temp 0
-scoreboard players set #5 calcu_temp 0
-scoreboard players set #6 calcu_temp 0
-scoreboard players set #7 calcu_temp 0
-scoreboard players set #8 calcu_temp 0
-scoreboard players set #9 calcu_temp 0
-scoreboard players set #10 calcu_temp 0
